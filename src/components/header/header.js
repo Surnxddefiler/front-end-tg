@@ -6,7 +6,7 @@ const Header=()=>{
     return(
         <header>
         <Button onClick={closeApp}>закрыть</Button>
-        <span>{user.username}</span>
+        <span>р</span>
         <span>шайба поцык снюс имба</span>
         </header>
     )
