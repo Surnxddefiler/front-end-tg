@@ -7,8 +7,7 @@ const Header=()=>{
     return(
         <header>
         <Button onClick={closeApp}>закрыть</Button>
-        <span>{tg.initDataUnsafe?.user.username}</span>
-        <span>шайба поцык снюс имба</span>
+        <div>{tg.initDataUnsafe?.user.username}</div>
         </header>
     )
 }
