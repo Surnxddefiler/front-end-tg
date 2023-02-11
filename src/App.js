@@ -3,6 +3,14 @@ import './App.css';
 import Header from './components/header/header';
 const tg = window.Telegram.WebApp
 console.log(tg)
+const onToggleButton=()=>{
+  if(tg.MainButton.isVisible){
+    tg.MainButton.hide();
+  }
+  else{
+    tg.MainButton.show();
+  }
+}
 function App() {
   useEffect(()=>{
     tg.ready();
@@ -11,7 +19,7 @@ function App() {
     <div className="App">
       <Header/>
       <div>bob</div>
-      <button>закрыть</button>
+      <button onClick={onToggleButton}>закрыть</button>
     </div>
   );
 }
