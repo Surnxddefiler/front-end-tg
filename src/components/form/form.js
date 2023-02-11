@@ -7,10 +7,10 @@ const Schedule=()=>{
             text: 'Отправить данные'
         })
     })
-    const[first, setFirst]= useState('1 боб')
-    const[second, setSecond]= useState('2 боб')
-    const[third, setThird]= useState('3 боб')
-    const[fourth, setFourth]= useState('4 боб')
+    const[first, setFirst]= useState('')
+    const[second, setSecond]= useState('')
+    const[third, setThird]= useState('')
+    const[fourth, setFourth]= useState('')
     useEffect(()=>{
         if(!first || !second || !third){
             tg.MainButton.hide()
