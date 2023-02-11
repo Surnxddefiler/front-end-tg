@@ -18,7 +18,7 @@ const Schedule=()=>{
         else{
             tg.MainButton.show();
         }
-    }, [first,second,third])
+    })
     const onChangeFirst=(e)=>{
         setFirst(e.targer.value)
     }
