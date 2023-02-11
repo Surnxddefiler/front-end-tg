@@ -7,10 +7,10 @@ const Schedule=()=>{
             text: 'Отправить данные'
         })
     })
-    const[first, setFirst]= useState('')
-    const[second, setSecond]= useState('')
-    const[third, setThird]= useState('')
-    const[fourth, setFourth]= useState('')
+    const[first, setFirst]= useState('1 боб')
+    const[second, setSecond]= useState('2 боб')
+    const[third, setThird]= useState('3 боб')
+    const[fourth, setFourth]= useState('4 боб')
     useEffect(()=>{
         if(!first || !second || !third){
             tg.MainButton.hide()
@@ -20,16 +20,16 @@ const Schedule=()=>{
         }
     })
     const onChangeFirst=(e)=>{
-        setFirst(e.targer.value)
+        setFirst(e.target.value)
     }
     const onChangeSecond=(e)=>{
-        setSecond(e.targer.value)
+        setSecond(e.target.value)
     }
     const onChangeThird=(e)=>{
-        setThird(e.targer.value)
+        setThird(e.target.value)
     }
     const onChangeFourth=(e)=>{
-        setFourth(e.targer.value)
+        setFourth(e.target.value)
     }
     return(
         <form>
