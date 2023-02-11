@@ -1,17 +1,11 @@
 import { useEffect } from 'react'
 import './App.css';
 import Header from './components/header/header';
-const tg = window.Telegram.WebApp
+import { useTelegram } from './hooks/useTelegram';
+
 console.log(tg)
-const onToggleButton=()=>{
-  if(tg.MainButton.isVisible){
-    tg.MainButton.hide();
-  }
-  else{
-    tg.MainButton.show();
-  }
-}
 function App() {
+  const {tg, onToggleButton}= useTelegram();
   useEffect(()=>{
     tg.ready();
   })
