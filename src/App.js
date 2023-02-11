@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <div>bob</div>
-      <button onClick={closeApp}>закрыть</button>
+      <button>закрыть</button>
     </div>
   );
 }
