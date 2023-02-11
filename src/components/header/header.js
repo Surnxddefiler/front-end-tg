@@ -2,7 +2,8 @@ import { useTelegram } from "../../hooks/useTelegram"
 import Button from "../button/button"
 
 const Header=()=>{
-    const {tg, closeApp}= useTelegram
+    const tg = window.Telegram.WebApp
+    const {closeApp}= useTelegram
     return(
         <header>
         <Button onClick={closeApp}>закрыть</Button>
