@@ -1,6 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Schedule=()=>{
+    const tg = window.Telegram.WebApp
+    useEffect(()=>{
+        tg.MainButton.setParams({
+            text: 'Отправить данные'
+        })
+    })
+    useEffect(()=>{
+        if(!first || !second || !third){
+            tg.MainButton.hide()
+        }
+        else{
+            tg.MainButton.show();
+        }
+    }, [first,second,third])
     const[first, setFirst]= useState('')
     const[second, setSecond]= useState('')
     const[third, setThird]= useState('')
