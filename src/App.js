@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Header/>
       <div>bob</div>
-      <button onClick={onToggleButton}>закрыть</button>
+      <button onClick={onToggleButton}>show button</button>
     </div>
   );
 }

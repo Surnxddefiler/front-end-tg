@@ -3,7 +3,7 @@ import Button from "../button/button"
 
 const Header=()=>{
     const tg = window.Telegram.WebApp
-    const {closeApp}= useTelegram
+    const {closeApp}= useTelegram();
     return(
         <header>
         <Button onClick={closeApp}>закрыть</Button>
