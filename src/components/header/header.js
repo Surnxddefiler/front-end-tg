@@ -10,6 +10,7 @@ const Header=()=>{
         <Button onClick={closeApp}>бобики шайбики</Button>
         <span>{tg.initDataUnsafe?.user.username}</span>
         <span>шайба поцык снюс имба</span>
+        <span>eshe odin</span>
         </header>
     )
 }
