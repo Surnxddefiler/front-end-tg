@@ -3,7 +3,6 @@ import {  Route, Routes } from 'react-router-dom';
 import './App.css';
 import Schedule from './components/form/form';
 import Header from './components/header/header';
-import { useTelegram } from './hooks/useTelegram';
 const tg = window.Telegram.WebApp
 function App() {
   useEffect(()=>{
