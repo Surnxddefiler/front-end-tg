@@ -58,8 +58,8 @@ const Schedule = () => {
             <input type="text" placeholder="3 пара" onChange={onChangeThird} value={third} />
             <input type="text" placeholder="4 пара" onChange={onChangeFourth} value={fourth} />
             <select value={group} onChange={onChangeGroup}>
-                <option value="K41" key="">K41</option>
-                <option value="K31" key="">31K</option>
+                <option value={"K41"}>41-К</option>
+                <option value={"K31"}>31-K</option>
             </select>
         </form>
     )
