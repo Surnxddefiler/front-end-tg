@@ -14,11 +14,14 @@ const Schedule = () => {
     const [group, setGroup] = useState('')
     const onSendData = useCallback(() => {
         const data = {
-            first,
-            second,
-            third,
-            fourth,
-            group
+            Monday: [
+                first,
+                second,
+                third,
+                fourth,
+                group
+            ]
+
         }
         tg.sendData(JSON.stringify(data))
     }, [tg, first, second, third, fourth, group])
