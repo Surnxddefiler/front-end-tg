@@ -1,42 +1,66 @@
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
-const Schedule=()=>{
+const Schedule = () => {
     const tg = window.Telegram.WebApp
-    useEffect(()=>{
+    useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
         })
     })
-    const[first, setFirst]= useState('')
-    const[second, setSecond]= useState('')
-    const[third, setThird]= useState('')
-    const[fourth, setFourth]= useState('')
-    useEffect(()=>{
-        if(!first || !second || !third){
+    const [first, setFirst] = useState('')
+    const [second, setSecond] = useState('')
+    const [third, setThird] = useState('')
+    const [fourth, setFourth] = useState('')
+    const [group, setGroup] = useState('')
+    const onSendData = useCallback(() => {
+        const data={
+            first,
+            second,
+            third,
+            fourth,
+            group
+        }
+        tg.sendData(JSON.stringify(data))
+    })
+    useEffect(() => {
+        tg.onEvent('mainButtonClicked', onSendData)
+        return () => {
+            tg.offEvent('mainButtonClicked', onSendData)
+        }
+    })
+    useEffect(() => {
+        if (!first || !second || !third) {
             tg.MainButton.hide()
         }
-        else{
+        else {
             tg.MainButton.show();
         }
     })
-    const onChangeFirst=(e)=>{
+    const onChangeFirst = (e) => {
         setFirst(e.target.value)
     }
-    const onChangeSecond=(e)=>{
+    const onChangeSecond = (e) => {
         setSecond(e.target.value)
     }
-    const onChangeThird=(e)=>{
+    const onChangeThird = (e) => {
         setThird(e.target.value)
     }
-    const onChangeFourth=(e)=>{
+    const onChangeFourth = (e) => {
         setFourth(e.target.value)
     }
-    return(
+    const onChangeGroup = (e) => {
+        setGroup(e.target.value)
+    }
+    return (
         <form>
             <input type="text" placeholder="1 пара" onChange={onChangeFirst} value={first} />
-            <input type="text" placeholder="2 пара" onChange={onChangeSecond} value={second}/>
-            <input type="text" placeholder="3 пара"  onChange={onChangeThird} value={third}/>
-            <input type="text" placeholder="4 пара"  onChange={onChangeFourth} value={fourth}/>
+            <input type="text" placeholder="2 пара" onChange={onChangeSecond} value={second} />
+            <input type="text" placeholder="3 пара" onChange={onChangeThird} value={third} />
+            <input type="text" placeholder="4 пара" onChange={onChangeFourth} value={fourth} />
+            <select value={group} onChange={onChangeGroup}>
+                <option value="K41" key="">41K</option>
+                <option value="K31" key="">31K</option>
+            </select>
         </form>
     )
 }
