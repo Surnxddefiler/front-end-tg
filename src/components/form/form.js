@@ -21,7 +21,7 @@ const Schedule = () => {
             group
         }
         tg.sendData(JSON.stringify(data))
-    }, [first, second, third, fourth, group])
+    }, [ tg, first, second, third, fourth, group])
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
