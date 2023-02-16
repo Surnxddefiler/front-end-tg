@@ -457,10 +457,30 @@ const Schedule = () => {
         <form>
             <select value={group} onChange={onChangeGroup} placeholder="группа">
                 <option value={"-"}>-</option>
-                <option value={"41-K"}>41-К</option>
-                <option value={"31-K"}>31-K</option>
                 <option value={"11-T"}>11-Т</option>
                 <option value={"21-T"}>21-Т</option>
+                <option value={"31-T"}>31-T</option>
+                <option value={"11-TX"}>11-TX</option>
+                <option value={"21-TX"}>21-TX</option>
+                <option value={"22-TX"}>22-TX</option>
+                <option value={"31-TX"}>31-TX</option>
+                <option value={"32-TX"}>32-TX</option>
+                <option value={"33-TX"}>33-TX</option>
+                <option value={"42-TX"}>42-TX</option>
+                <option value={"11-K"}>11-K</option>
+                <option value={"21-K"}>21-K</option>
+                <option value={"31-K"}>31-K</option>
+                <option value={"41-K"}>41-K</option>
+                <option value={"11-A"}>11-A</option>
+                <option value={"21-A"}>21-A</option>
+                <option value={"31-A"}>31-A</option>
+                <option value={"41-A"}>41-A</option>
+                <option value={"21-M"}>21-M</option>
+                <option value={"31-M"}>31-M</option>
+                <option value={"41-M"}>41-M</option>
+                <option value={"21-X"}>21-X</option>
+                <option value={"31-X"}>31-X</option>
+                <option value={"41-X"}>41-X</option>
             </select>
             <label>понеділок</label>
             <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} />
