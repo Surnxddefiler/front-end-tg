@@ -457,8 +457,10 @@ const Schedule = () => {
         <form>
             <select value={group} onChange={onChangeGroup} placeholder="группа">
                 <option value={"-"}>-</option>
-                <option value={"K-14"}>41-К</option>
-                <option value={"K-13"}>31-K</option>
+                <option value={"41-K"}>41-К</option>
+                <option value={"31-K"}>31-K</option>
+                <option value={"11-T"}>11-Т</option>
+                <option value={"21-T"}>21-Т</option>
             </select>
             <label>понеділок</label>
             <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} />
