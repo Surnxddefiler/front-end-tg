@@ -115,8 +115,8 @@ const Schedule = () => {
                 },
                 {
                     course: mondayThird,
-                    room: mondaySecondCabinet,
-                    teacher: mondaySecondTeacher
+                    room: mondayThirdCabinet,
+                    teacher: mondayThirdTeacher
                 },
                 {
                     course: mondayFourth,
@@ -137,8 +137,8 @@ const Schedule = () => {
                 },
                 {
                     course: TuesdayThird,
-                    room: TuesdaySecondCabinet,
-                    teacher: TuesdaySecondTeacher
+                    room: TuesdayThirdCabinet,
+                    teacher: TuesdayThirdTeacher
                 },
                 {
                     course: TuesdayFourth,
@@ -159,8 +159,8 @@ const Schedule = () => {
                 },
                 {
                     course: WednesdayThird,
-                    room: WednesdaySecondCabinet,
-                    teacher: WednesdaySecondTeacher
+                    room: WednesdayThirdCabinet,
+                    teacher: WednesdayThirdTeacher
                 },
                 {
                     course: WednesdayFourth,
@@ -181,8 +181,8 @@ const Schedule = () => {
                 },
                 {
                     course: ThursdayThird,
-                    room: ThursdaySecondCabinet,
-                    teacher: ThursdaySecondTeacher
+                    room: ThursdayThirdCabinet,
+                    teacher: ThursdayThirdTeacher
                 },
                 {
                     course: ThursdayFourth,
@@ -203,8 +203,8 @@ const Schedule = () => {
                 },
                 {
                     course: FridayThird,
-                    room: FridaySecondCabinet,
-                    teacher: FridaySecondTeacher
+                    room: FridayThirdCabinet,
+                    teacher: FridayThirdTeacher
                 },
                 {
                     course: FridayFourth,
