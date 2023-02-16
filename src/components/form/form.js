@@ -14,12 +14,22 @@ const Schedule = () => {
     const [group, setGroup] = useState('')
     const onSendData = useCallback(() => {
         const data = {
+            group,
             Monday: [
-                first,
-                second,
-                third,
-                fourth,
-                group
+                {
+                    course: first,
+                },
+                {
+                    course: second,
+                },
+                {
+                    course: third,
+                },
+                {
+                    course: fourth,
+                },
+                
+                
             ]
 
         }
