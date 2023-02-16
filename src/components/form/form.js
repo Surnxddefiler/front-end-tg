@@ -61,6 +61,25 @@ const [WednesdaySecondTeacher, setWednesdaySecondTeacher] = useState('')
 const [WednesdayThirdTeacher, setWednesdayThirdTeacher] = useState('')
 const [WednesdayFirstTeacher, setWednesdayFirstTeacher] = useState('')
 
+//
+const [ThursdayFirst, setThursdayFirst] = useState('')
+const [ThursdaySecond, setThursdaySecond] = useState('')
+const [ThursdayThird, setThursdayThird] = useState('')
+const [ThursdayFourth, setThursdayFourth] = useState('')
+
+
+const [ThursdayFourthCabinet, setThursdayFourthCabinet] = useState('')
+const [ThursdaySecondCabinet, setThursdaySecondCabinet] = useState('')
+const [ThursdayThirdCabinet, setThursdayThirdCabinet] = useState('')
+const [ThursdayFirstCabinet, setThursdayFirstCabinet] = useState('')
+
+
+const [ThursdayFourthTeacher, setThursdayFourthTeacher] = useState('')
+const [ThursdaySecondTeacher, setThursdaySecondTeacher] = useState('')
+const [ThursdayThirdTeacher, setThursdayThirdTeacher] = useState('')
+const [ThursdayFirstTeacher, setThursdayFirstTeacher] = useState('')
+
+
     const [group, setGroup] = useState('')
     const onSendData = useCallback(() => {
         const data = {
@@ -223,6 +242,48 @@ const [WednesdayFirstTeacher, setWednesdayFirstTeacher] = useState('')
         setWednesdayFirstTeacher(e.target.value)
     }
 
+    //
+    const onChangeThursdayFirst = (e) => {
+        setThursdayFirst(e.target.value)
+    }
+    const onChangeThursdaySecond = (e) => {
+        setThursdaySecond(e.target.value)
+    }
+    const onChangeThursdayThird = (e) => {
+        setThursdayThird(e.target.value)
+    }
+    const onChangeThursdayFourth = (e) => {
+        setThursdayFourth(e.target.value)
+    }
+
+
+    const onChangeThursdayFourthCabinet = (e) => {
+        setThursdayFourthCabinet(e.target.value)
+    }
+    const onChangeThursdayThirdCabinet = (e) => {
+        setThursdayThirdCabinet(e.target.value)
+    }
+    const onChangeThursdaySecondCabinet = (e) => {
+        setThursdaySecondCabinet(e.target.value)
+    }
+    const onChangeThursdayFirstCabinet = (e) => {
+        setThursdayFirstCabinet(e.target.value)
+    }
+
+
+
+    const onChangeThursdayFourthTeacher = (e) => {
+        setThursdayFourthTeacher(e.target.value)
+    }
+    const onChangeThursdayThirdTeacher = (e) => {
+        setThursdayThirdTeacher(e.target.value)
+    }
+    const onChangeThursdaySecondTeacher = (e) => {
+        setThursdaySecondTeacher(e.target.value)
+    }
+    const onChangeThursdayFirstTeacher = (e) => {
+        setThursdayFirstTeacher(e.target.value)
+    }
 
 
 
@@ -252,6 +313,11 @@ const [WednesdayFirstTeacher, setWednesdayFirstTeacher] = useState('')
             <input type="text" placeholder="2 пара" onChange={onChangeWednesdaySecond} value={WednesdaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeWednesdaySecondCabinet} value={WednesdaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeWednesdaySecondTeacher} value={WednesdaySecondTeacher} />
             <input type="text" placeholder="3 пара" onChange={onChangeWednesdayThird} value={WednesdayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeWednesdayThirdCabinet} value={WednesdayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeWednesdayThirdTeacher} value={WednesdayThirdTeacher} />
             <input type="text" placeholder="4 пара" onChange={onChangeWednesdayFourth} value={WednesdayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeWednesdayFourthCabinet} value={WednesdayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeWednesdayFourthTeacher} value={WednesdayFourthTeacher} />
+            <label>Четвер</label>
+            <input type="text" placeholder="1 пара" onChange={onChangeThursdayFirst} value={ThursdayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdayFirstCabinet} value={ThursdayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdayFirstTeacher} value={ThursdayFirstTeacher} />
+            <input type="text" placeholder="2 пара" onChange={onChangeThursdaySecond} value={ThursdaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdaySecondCabinet} value={ThursdaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdaySecondTeacher} value={ThursdaySecondTeacher} />
+            <input type="text" placeholder="3 пара" onChange={onChangeThursdayThird} value={ThursdayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdayThirdCabinet} value={ThursdayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdayThirdTeacher} value={ThursdayThirdTeacher} />
+            <input type="text" placeholder="4 пара" onChange={onChangeThursdayFourth} value={ThursdayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdayFourthCabinet} value={ThursdayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdayFourthTeacher} value={ThursdayFourthTeacher} />
         </form>
     )
 }
