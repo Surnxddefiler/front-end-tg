@@ -105,21 +105,121 @@ const Schedule = () => {
             Monday: [
                 {
                     course: mondayFirst,
+                    room: mondayFirstCabinet,
+                    teacher: mondayFirstTeacher
                 },
                 {
                     course: mondaySecond,
+                    room: mondaySecondCabinet,
+                    teacher: mondaySecondTeacher
                 },
                 {
                     course: mondayThird,
+                    room: mondaySecondCabinet,
+                    teacher: mondaySecondTeacher
                 },
                 {
                     course: mondayFourth,
+                    room: mondayFourthCabinet,
+                    teacher: mondayFourthTeacher
+                },
+            ],
+            Tuesday: [
+                {
+                    course: TuesdayFirst,
+                    room: TuesdayFirstCabinet,
+                    teacher: TuesdayFirstTeacher
+                },
+                {
+                    course: TuesdaySecond,
+                    room: TuesdaySecondCabinet,
+                    teacher: TuesdaySecondTeacher
+                },
+                {
+                    course: TuesdayThird,
+                    room: TuesdaySecondCabinet,
+                    teacher: TuesdaySecondTeacher
+                },
+                {
+                    course: TuesdayFourth,
+                    room: TuesdayFourthCabinet,
+                    teacher: TuesdayFourthTeacher
+                },
+            ],
+            Wednesday: [
+                {
+                    course: WednesdayFirst,
+                    room: WednesdayFirstCabinet,
+                    teacher: WednesdayFirstTeacher
+                },
+                {
+                    course: WednesdaySecond,
+                    room: WednesdaySecondCabinet,
+                    teacher: WednesdaySecondTeacher
+                },
+                {
+                    course: WednesdayThird,
+                    room: WednesdaySecondCabinet,
+                    teacher: WednesdaySecondTeacher
+                },
+                {
+                    course: WednesdayFourth,
+                    room: WednesdayFourthCabinet,
+                    teacher: WednesdayFourthTeacher
+                },
+            ],
+            Thursday: [
+                {
+                    course: ThursdayFirst,
+                    room: ThursdayFirstCabinet,
+                    teacher: ThursdayFirstTeacher
+                },
+                {
+                    course: ThursdaySecond,
+                    room: ThursdaySecondCabinet,
+                    teacher: ThursdaySecondTeacher
+                },
+                {
+                    course: ThursdayThird,
+                    room: ThursdaySecondCabinet,
+                    teacher: ThursdaySecondTeacher
+                },
+                {
+                    course: ThursdayFourth,
+                    room: ThursdayFourthCabinet,
+                    teacher: ThursdayFourthTeacher
+                },
+            ],
+            Friday: [
+                {
+                    course: FridayFirst,
+                    room: FridayFirstCabinet,
+                    teacher: FridayFirstTeacher
+                },
+                {
+                    course: FridaySecond,
+                    room: FridaySecondCabinet,
+                    teacher: FridaySecondTeacher
+                },
+                {
+                    course: FridayThird,
+                    room: FridaySecondCabinet,
+                    teacher: FridaySecondTeacher
+                },
+                {
+                    course: FridayFourth,
+                    room: FridayFourthCabinet,
+                    teacher: FridayFourthTeacher
                 },
             ]
 
         }
         tg.sendData(JSON.stringify(data))
-    }, [tg, mondayFirst, mondaySecond, mondayThird, mondayFourth, group])
+    }, [tg, mondayFirst, mondaySecond, mondayThird, mondayFourth,  mondayFirstCabinet, mondayFirstTeacher, mondaySecondCabinet, mondaySecondTeacher, mondayThirdCabinet, mondayThirdTeacher, mondayFourthCabinet, mondayFourthCabinet, mondayFourthTeacher, 
+        TuesdayFirst, TuesdaySecond, TuesdayThird, TuesdayFourth, TuesdayFirstCabinet, TuesdayThirdCabinet, TuesdaySecondCabinet, TuesdayFourthCabinet, TuesdayFirstTeacher, TuesdaySecondTeacher, TuesdayThirdTeacher, TuesdayFourthTeacher,  
+        WednesdayFirst, WednesdaySecond, WednesdayThird, WednesdayFourth, WednesdayFirstCabinet, WednesdayThirdCabinet, WednesdaySecondCabinet, WednesdayFourthCabinet, WednesdayFirstTeacher, WednesdaySecondTeacher, WednesdayThirdTeacher, WednesdayFourthTeacher, 
+        ThursdayFirst, ThursdaySecond, ThursdayThird, ThursdayFourth, ThursdayFirstCabinet, ThursdayThirdCabinet, ThursdaySecondCabinet, ThursdayFourthCabinet, ThursdayFirstTeacher, ThursdaySecondTeacher, ThursdayThirdTeacher, ThursdayFourthTeacher, 
+        FridayFirst, FridaySecond, FridayThird, FridayFourth, FridayFirstCabinet, FridayThirdCabinet, FridaySecondCabinet, FridayFourthCabinet, FridayFirstTeacher, FridaySecondTeacher, FridayThirdTeacher, FridayFourthTeacher,group])
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
