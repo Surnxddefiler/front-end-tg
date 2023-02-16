@@ -24,61 +24,79 @@ const Schedule = () => {
     const [mondayThirdTeacher, setMondayThirdTeacher] = useState('')
     const [mondayFirstTeacher, setMondayFirstTeacher] = useState('')
 
-//
+    //
 
-const [TuesdayFirst, setTuesdayFirst] = useState('')
-const [TuesdaySecond, setTuesdaySecond] = useState('')
-const [TuesdayThird, setTuesdayThird] = useState('')
-const [TuesdayFourth, setTuesdayFourth] = useState('')
-
-
-const [TuesdayFourthCabinet, setTuesdayFourthCabinet] = useState('')
-const [TuesdaySecondCabinet, setTuesdaySecondCabinet] = useState('')
-const [TuesdayThirdCabinet, setTuesdayThirdCabinet] = useState('')
-const [TuesdayFirstCabinet, setTuesdayFirstCabinet] = useState('')
+    const [TuesdayFirst, setTuesdayFirst] = useState('')
+    const [TuesdaySecond, setTuesdaySecond] = useState('')
+    const [TuesdayThird, setTuesdayThird] = useState('')
+    const [TuesdayFourth, setTuesdayFourth] = useState('')
 
 
-const [TuesdayFourthTeacher, setTuesdayFourthTeacher] = useState('')
-const [TuesdaySecondTeacher, setTuesdaySecondTeacher] = useState('')
-const [TuesdayThirdTeacher, setTuesdayThirdTeacher] = useState('')
-const [TuesdayFirstTeacher, setTuesdayFirstTeacher] = useState('')
-//
-
-const [WednesdayFirst, setWednesdayFirst] = useState('')
-const [WednesdaySecond, setWednesdaySecond] = useState('')
-const [WednesdayThird, setWednesdayThird] = useState('')
-const [WednesdayFourth, setWednesdayFourth] = useState('')
+    const [TuesdayFourthCabinet, setTuesdayFourthCabinet] = useState('')
+    const [TuesdaySecondCabinet, setTuesdaySecondCabinet] = useState('')
+    const [TuesdayThirdCabinet, setTuesdayThirdCabinet] = useState('')
+    const [TuesdayFirstCabinet, setTuesdayFirstCabinet] = useState('')
 
 
-const [WednesdayFourthCabinet, setWednesdayFourthCabinet] = useState('')
-const [WednesdaySecondCabinet, setWednesdaySecondCabinet] = useState('')
-const [WednesdayThirdCabinet, setWednesdayThirdCabinet] = useState('')
-const [WednesdayFirstCabinet, setWednesdayFirstCabinet] = useState('')
+    const [TuesdayFourthTeacher, setTuesdayFourthTeacher] = useState('')
+    const [TuesdaySecondTeacher, setTuesdaySecondTeacher] = useState('')
+    const [TuesdayThirdTeacher, setTuesdayThirdTeacher] = useState('')
+    const [TuesdayFirstTeacher, setTuesdayFirstTeacher] = useState('')
+    //
+
+    const [WednesdayFirst, setWednesdayFirst] = useState('')
+    const [WednesdaySecond, setWednesdaySecond] = useState('')
+    const [WednesdayThird, setWednesdayThird] = useState('')
+    const [WednesdayFourth, setWednesdayFourth] = useState('')
 
 
-const [WednesdayFourthTeacher, setWednesdayFourthTeacher] = useState('')
-const [WednesdaySecondTeacher, setWednesdaySecondTeacher] = useState('')
-const [WednesdayThirdTeacher, setWednesdayThirdTeacher] = useState('')
-const [WednesdayFirstTeacher, setWednesdayFirstTeacher] = useState('')
-
-//
-const [ThursdayFirst, setThursdayFirst] = useState('')
-const [ThursdaySecond, setThursdaySecond] = useState('')
-const [ThursdayThird, setThursdayThird] = useState('')
-const [ThursdayFourth, setThursdayFourth] = useState('')
+    const [WednesdayFourthCabinet, setWednesdayFourthCabinet] = useState('')
+    const [WednesdaySecondCabinet, setWednesdaySecondCabinet] = useState('')
+    const [WednesdayThirdCabinet, setWednesdayThirdCabinet] = useState('')
+    const [WednesdayFirstCabinet, setWednesdayFirstCabinet] = useState('')
 
 
-const [ThursdayFourthCabinet, setThursdayFourthCabinet] = useState('')
-const [ThursdaySecondCabinet, setThursdaySecondCabinet] = useState('')
-const [ThursdayThirdCabinet, setThursdayThirdCabinet] = useState('')
-const [ThursdayFirstCabinet, setThursdayFirstCabinet] = useState('')
+    const [WednesdayFourthTeacher, setWednesdayFourthTeacher] = useState('')
+    const [WednesdaySecondTeacher, setWednesdaySecondTeacher] = useState('')
+    const [WednesdayThirdTeacher, setWednesdayThirdTeacher] = useState('')
+    const [WednesdayFirstTeacher, setWednesdayFirstTeacher] = useState('')
+
+    //
+    const [ThursdayFirst, setThursdayFirst] = useState('')
+    const [ThursdaySecond, setThursdaySecond] = useState('')
+    const [ThursdayThird, setThursdayThird] = useState('')
+    const [ThursdayFourth, setThursdayFourth] = useState('')
 
 
-const [ThursdayFourthTeacher, setThursdayFourthTeacher] = useState('')
-const [ThursdaySecondTeacher, setThursdaySecondTeacher] = useState('')
-const [ThursdayThirdTeacher, setThursdayThirdTeacher] = useState('')
-const [ThursdayFirstTeacher, setThursdayFirstTeacher] = useState('')
+    const [ThursdayFourthCabinet, setThursdayFourthCabinet] = useState('')
+    const [ThursdaySecondCabinet, setThursdaySecondCabinet] = useState('')
+    const [ThursdayThirdCabinet, setThursdayThirdCabinet] = useState('')
+    const [ThursdayFirstCabinet, setThursdayFirstCabinet] = useState('')
 
+
+    const [ThursdayFourthTeacher, setThursdayFourthTeacher] = useState('')
+    const [ThursdaySecondTeacher, setThursdaySecondTeacher] = useState('')
+    const [ThursdayThirdTeacher, setThursdayThirdTeacher] = useState('')
+    const [ThursdayFirstTeacher, setThursdayFirstTeacher] = useState('')
+
+
+    //
+    const [FridayFirst, setFridayFirst] = useState('')
+    const [FridaySecond, setFridaySecond] = useState('')
+    const [FridayThird, setFridayThird] = useState('')
+    const [FridayFourth, setFridayFourth] = useState('')
+
+
+    const [FridayFourthCabinet, setFridayFourthCabinet] = useState('')
+    const [FridaySecondCabinet, setFridaySecondCabinet] = useState('')
+    const [FridayThirdCabinet, setFridayThirdCabinet] = useState('')
+    const [FridayFirstCabinet, setFridayFirstCabinet] = useState('')
+
+
+    const [FridayFourthTeacher, setFridayFourthTeacher] = useState('')
+    const [FridaySecondTeacher, setFridaySecondTeacher] = useState('')
+    const [FridayThirdTeacher, setFridayThirdTeacher] = useState('')
+    const [FridayFirstTeacher, setFridayFirstTeacher] = useState('')
 
     const [group, setGroup] = useState('')
     const onSendData = useCallback(() => {
@@ -287,6 +305,50 @@ const [ThursdayFirstTeacher, setThursdayFirstTeacher] = useState('')
 
 
 
+    //
+    const onChangeFridayFirst = (e) => {
+        setFridayFirst(e.target.value)
+    }
+    const onChangeFridaySecond = (e) => {
+        setFridaySecond(e.target.value)
+    }
+    const onChangeFridayThird = (e) => {
+        setFridayThird(e.target.value)
+    }
+    const onChangeFridayFourth = (e) => {
+        setFridayFourth(e.target.value)
+    }
+
+
+    const onChangeFridayFourthCabinet = (e) => {
+        setFridayFourthCabinet(e.target.value)
+    }
+    const onChangeFridayThirdCabinet = (e) => {
+        setFridayThirdCabinet(e.target.value)
+    }
+    const onChangeFridaySecondCabinet = (e) => {
+        setFridaySecondCabinet(e.target.value)
+    }
+    const onChangeFridayFirstCabinet = (e) => {
+        setFridayFirstCabinet(e.target.value)
+    }
+
+
+
+    const onChangeFridayFourthTeacher = (e) => {
+        setFridayFourthTeacher(e.target.value)
+    }
+    const onChangeFridayThirdTeacher = (e) => {
+        setFridayThirdTeacher(e.target.value)
+    }
+    const onChangeFridaySecondTeacher = (e) => {
+        setFridaySecondTeacher(e.target.value)
+    }
+    const onChangeFridayFirstTeacher = (e) => {
+        setFridayFirstTeacher(e.target.value)
+    }
+
+
 
     const onChangeGroup = (e) => {
         setGroup(e.target.value)
@@ -318,6 +380,11 @@ const [ThursdayFirstTeacher, setThursdayFirstTeacher] = useState('')
             <input type="text" placeholder="2 пара" onChange={onChangeThursdaySecond} value={ThursdaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdaySecondCabinet} value={ThursdaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdaySecondTeacher} value={ThursdaySecondTeacher} />
             <input type="text" placeholder="3 пара" onChange={onChangeThursdayThird} value={ThursdayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdayThirdCabinet} value={ThursdayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdayThirdTeacher} value={ThursdayThirdTeacher} />
             <input type="text" placeholder="4 пара" onChange={onChangeThursdayFourth} value={ThursdayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeThursdayFourthCabinet} value={ThursdayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeThursdayFourthTeacher} value={ThursdayFourthTeacher} />
+            <label>Пятниця</label>
+            <input type="text" placeholder="1 пара" onChange={onChangeFridayFirst} value={FridayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeFridayFirstCabinet} value={FridayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeFridayFirstTeacher} value={FridayFirstTeacher} />
+            <input type="text" placeholder="2 пара" onChange={onChangeFridaySecond} value={FridaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeFridaySecondCabinet} value={FridaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeFridaySecondTeacher} value={FridaySecondTeacher} />
+            <input type="text" placeholder="3 пара" onChange={onChangeFridayThird} value={FridayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeFridayThirdCabinet} value={FridayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeFridayThirdTeacher} value={FridayThirdTeacher} />
+            <input type="text" placeholder="4 пара" onChange={onChangeFridayFourth} value={FridayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeFridayFourthCabinet} value={FridayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeFridayFourthTeacher} value={FridayFourthTeacher} />
         </form>
     )
 }
