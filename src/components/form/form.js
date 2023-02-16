@@ -23,10 +23,10 @@ const Schedule = () => {
                     course: mondaySecond,
                 },
                 {
-                    course: third,
+                    course: mondayThird,
                 },
                 {
-                    course: fourth,
+                    course: mondayFourth,
                 },
             ]
 
