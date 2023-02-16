@@ -113,10 +113,10 @@ const Schedule = () => {
                 <option value={"K-14"}>41-К</option>
                 <option value={"K-13"}>31-K</option>
             </select>
-            <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} />
-            <input type="text" placeholder="2 пара" onChange={onChangeMondaySecond} value={mondaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeMondaySecondCabinet} value={mondaySecondCabinet} /> <input type="number" placeholder="кабінет" onChange={onChangeMondaySecondTeacher} value={mondaySecondTeacher} />
-            <input type="text" placeholder="3 пара" onChange={onChangeMondayThird} value={mondayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayThirdCabinet} value={mondayThirdCabinet} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayThirdTeacher} value={mondayThirdTeacher} />
-            <input type="text" placeholder="4 пара" onChange={onChangeMondayFourth} value={mondayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFourthCabinet} value={mondayFourthCabinet} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFourthTeacher} value={mondayFourthTeacher} />
+            <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} />
+            <input type="text" placeholder="2 пара" onChange={onChangeMondaySecond} value={mondaySecond} /> <input type="number" placeholder="кабінет" onChange={onChangeMondaySecondCabinet} value={mondaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondaySecondTeacher} value={mondaySecondTeacher} />
+            <input type="text" placeholder="3 пара" onChange={onChangeMondayThird} value={mondayThird} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayThirdCabinet} value={mondayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayThirdTeacher} value={mondayThirdTeacher} />
+            <input type="text" placeholder="4 пара" onChange={onChangeMondayFourth} value={mondayFourth} /> <input type="number" placeholder="кабінет" onChange={onChangeMondayFourthCabinet} value={mondayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFourthTeacher} value={mondayFourthTeacher} />
         </form>
     )
 }
