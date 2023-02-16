@@ -215,7 +215,7 @@ const Schedule = () => {
 
         }
         tg.sendData(JSON.stringify(data))
-    }, [tg, mondayFirst, mondaySecond, mondayThird, mondayFourth,  mondayFirstCabinet, mondayFirstTeacher, mondaySecondCabinet, mondaySecondTeacher, mondayThirdCabinet, mondayThirdTeacher, mondayFourthCabinet, mondayFourthCabinet, mondayFourthTeacher, 
+    }, [tg, mondayFirst, mondaySecond, mondayThird, mondayFourth,  mondayFirstCabinet, mondayFirstTeacher, mondaySecondCabinet, mondaySecondTeacher, mondayThirdCabinet, mondayThirdTeacher, mondayFourthCabinet,  mondayFourthTeacher, 
         TuesdayFirst, TuesdaySecond, TuesdayThird, TuesdayFourth, TuesdayFirstCabinet, TuesdayThirdCabinet, TuesdaySecondCabinet, TuesdayFourthCabinet, TuesdayFirstTeacher, TuesdaySecondTeacher, TuesdayThirdTeacher, TuesdayFourthTeacher,  
         WednesdayFirst, WednesdaySecond, WednesdayThird, WednesdayFourth, WednesdayFirstCabinet, WednesdayThirdCabinet, WednesdaySecondCabinet, WednesdayFourthCabinet, WednesdayFirstTeacher, WednesdaySecondTeacher, WednesdayThirdTeacher, WednesdayFourthTeacher, 
         ThursdayFirst, ThursdaySecond, ThursdayThird, ThursdayFourth, ThursdayFirstCabinet, ThursdayThirdCabinet, ThursdaySecondCabinet, ThursdayFourthCabinet, ThursdayFirstTeacher, ThursdaySecondTeacher, ThursdayThirdTeacher, ThursdayFourthTeacher, 
