@@ -7,20 +7,20 @@ const Schedule = () => {
             text: 'Отправить данные'
         })
     })
-    const [first, setFirst] = useState('')
-    const [second, setSecond] = useState('')
-    const [third, setThird] = useState('')
-    const [fourth, setFourth] = useState('')
+    const [mondayFirst, setMondayFirst] = useState('')
+    const [mondaySecond, setMondaySecond] = useState('')
+    const [mondayThird, setMondayThird] = useState('')
+    const [mondayFourth, setMondayFourth] = useState('')
     const [group, setGroup] = useState('')
     const onSendData = useCallback(() => {
         const data = {
             group,
             Monday: [
                 {
-                    course: first,
+                    course: mondayFirst,
                 },
                 {
-                    course: second,
+                    course: mondaySecond,
                 },
                 {
                     course: third,
@@ -28,13 +28,11 @@ const Schedule = () => {
                 {
                     course: fourth,
                 },
-                
-                
             ]
 
         }
         tg.sendData(JSON.stringify(data))
-    }, [tg, first, second, third, fourth, group])
+    }, [tg, mondayFirst, mondaySecond, mondayThird, mondayFourth, group])
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
@@ -42,34 +40,34 @@ const Schedule = () => {
         }
     })
     useEffect(() => {
-        if (!first || !second || !third) {
+        if (!mondayFirst || !mondaySecond || !mondayThird) {
             tg.MainButton.hide()
         }
         else {
             tg.MainButton.show();
         }
     })
-    const onChangeFirst = (e) => {
-        setFirst(e.target.value)
+    const onChangeMondayFirst = (e) => {
+        setMondayFirst(e.target.value)
     }
-    const onChangeSecond = (e) => {
-        setSecond(e.target.value)
+    const onChangeMondaySecond = (e) => {
+        setMondaySecond(e.target.value)
     }
-    const onChangeThird = (e) => {
-        setThird(e.target.value)
+    const onChangeMondayThird = (e) => {
+        setMondayThird(e.target.value)
     }
-    const onChangeFourth = (e) => {
-        setFourth(e.target.value)
+    const onChangeMondayFourth = (e) => {
+        setMondayFourth(e.target.value)
     }
     const onChangeGroup = (e) => {
         setGroup(e.target.value)
     }
     return (
         <form>
-            <input type="text" placeholder="1 пара" onChange={onChangeFirst} value={first} />
-            <input type="text" placeholder="2 пара" onChange={onChangeSecond} value={second} />
-            <input type="text" placeholder="3 пара" onChange={onChangeThird} value={third} />
-            <input type="text" placeholder="4 пара" onChange={onChangeFourth} value={fourth} />
+            <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} />
+            <input type="text" placeholder="2 пара" onChange={onChangeMondaySecond} value={mondaySecond} />
+            <input type="text" placeholder="3 пара" onChange={onChangeMondayThird} value={mondayThird} />
+            <input type="text" placeholder="4 пара" onChange={onChangeMondayFourth} value={mondayFourth} />
             <select value={group} onChange={onChangeGroup} placeholder="группа">
                 <option value={"-"}>-</option>
                 <option value={"K41"}>41-К</option>
