@@ -39,7 +39,7 @@ const AdminForm = () => {
     return (
         <form>
             <div>додати адміна</div>
-            <input type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges}/>
+            <input type="text" value={changes} placeholder='id користувача' onChange={onChangeChanges}/>
         </form>
     )
 }
