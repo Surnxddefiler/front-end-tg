@@ -18,7 +18,7 @@ const ChangesForm = () => {
 
     const onSendData = useCallback(() => {
         const Changed = {
-            url: changes
+            changes
         }
         tg.sendData(JSON.stringify(Changed))
     }, [tg, changes])
