@@ -1,4 +1,6 @@
-const ChangesForm=()=>{
+import { useCallback, useEffect, useState } from "react"
+
+const ChangesForm = () => {
     const tg = window.Telegram.WebApp
     const [changes, setChanges] = useState('')
     useEffect(() => {
@@ -21,7 +23,7 @@ const ChangesForm=()=>{
         tg.sendData(JSON.stringify(Changed))
     }, [tg, changes])
 
-    const onChangeChanges=(e)=>{
+    const onChangeChanges = (e) => {
         setChanges(e.target.value)
     }
 
@@ -34,10 +36,10 @@ const ChangesForm=()=>{
         }
     })
 
-    return(
+    return (
         <form>
             <div>заміни</div>
-        <input type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges} />
+            <input type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges} />
         </form>
     )
 }
