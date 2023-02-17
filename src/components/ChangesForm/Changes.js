@@ -17,10 +17,10 @@ const ChangesForm = () => {
     })
 
     const onSendData = useCallback(() => {
-        const Changed = {
+        const newAdmin = {
             changes
         }
-        tg.sendData(JSON.stringify(Changed))
+        tg.sendData(JSON.stringify(newAdmin))
     }, [tg, changes])
 
     const onChangeChanges = (e) => {
@@ -39,7 +39,7 @@ const ChangesForm = () => {
     return (
         <form>
             <div>заміни</div>
-            <textarea type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges}></textarea>
+            <textarea type="number" value={changes} placeholder='url на картинку' onChange={onChangeChanges}></textarea>
         </form>
     )
 }
