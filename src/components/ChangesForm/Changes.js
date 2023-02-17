@@ -39,7 +39,7 @@ const ChangesForm = () => {
     return (
         <form>
             <div>заміни</div>
-            <textarea type="number" value={changes} placeholder='id користувача' onChange={onChangeChanges}></textarea>
+            <input type="number" value={changes} placeholder='id користувача' onChange={onChangeChanges}/>
         </form>
     )
 }
