@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react"
 
 const AdminForm = () => {
     const tg = window.Telegram.WebApp
-    const [newAdmin, setChanges] = useState('')
+    const [newAdmin, setNewAdmin] = useState('')
     useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
@@ -23,12 +23,12 @@ const AdminForm = () => {
         tg.sendData(JSON.stringify(newAdmin))
     }, [tg, newAdmin])
 
-    const onChangeChanges = (e) => {
-        setChanges(e.target.value)
+    const onChangeNewAdmin = (e) => {
+        setNewAdmin(e.target.value)
     }
 
     useEffect(() => {
-        if (!changes) {
+        if (!newAdmin) {
             tg.MainButton.hide()
         }
         else {
@@ -39,7 +39,7 @@ const AdminForm = () => {
     return (
         <form>
             <div>додати адміна</div>
-            <input type="number" value={newAdmin} placeholder='id користувача' onChange={onChangeChanges}/>
+            <input type="number" value={newAdmin} placeholder='id користувача' onChange={onChangeNewAdmin}/>
         </form>
     )
 }
