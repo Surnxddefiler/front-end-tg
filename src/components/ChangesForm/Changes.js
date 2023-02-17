@@ -35,6 +35,10 @@ const ChangesForm=()=>{
     })
 
     return(
+        <form>
+            <div>заміни</div>
         <input type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges} />
+        </form>
     )
 }
+export default ChangesForm
