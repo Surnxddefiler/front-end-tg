@@ -17,10 +17,10 @@ const AdminForm = () => {
     })
 
     const onSendData = useCallback(() => {
-        const newAdmin = {
+        const newAdminCall = {
             newAdmin
         }
-        tg.sendData(JSON.stringify(newAdmin))
+        tg.sendData(JSON.stringify(newAdminCall))
     }, [tg, newAdmin])
 
     const onChangeNewAdmin = (e) => {
