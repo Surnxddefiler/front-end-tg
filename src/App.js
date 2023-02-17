@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import {  Route, Routes } from 'react-router-dom';
 import './App.css';
+import AdminForm from './components/AdminForm/AdminForm';
 import ChangesForm from './components/ChangesForm/Changes';
 import Schedule from './components/form/form';
 import Header from './components/header/header';
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path={'schedule'} element={<Schedule/>}/>
         <Route path={'changes'} element={<ChangesForm/>}/>
+        <Route path={'admin'} element={<AdminForm/>}/>
       </Routes>
     </div>
   );
