@@ -39,7 +39,7 @@ const AddGroup = () => {
     return (
         <form>
             <div>додати адміна</div>
-            <input type="number" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
+            <input type="text" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
         </form>
     )
 }
