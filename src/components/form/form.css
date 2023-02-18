@@ -31,10 +31,10 @@
     box-shadow: 2px 2px 15px #8707ff inset;
 }
 .selector{
-    margin: 0 auto;
     width: 300px;
     background-color: var(--tg-theme-bg-color);
     border: #8707ff solid 1px;
+    border-radius: 40px;
     color: var(--tg-theme-text-color);
     outline: 0;
 }
