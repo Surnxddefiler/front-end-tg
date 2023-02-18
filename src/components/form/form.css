@@ -34,8 +34,8 @@
     margin: 0 auto;
     width: 300px;
     background-color: var(--tg-theme-bg-color);
-    border: #8707ff;
-    color: white;
+    border: #8707ff solid 1px;
+    color: var(--tg-theme-text-color);
     outline: 0;
 }
 span{
