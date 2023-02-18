@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-
+import style from './form.module.css'
 const Schedule = () => {
     const tg = window.Telegram.WebApp
     useEffect(() => {
@@ -483,7 +483,7 @@ const Schedule = () => {
                 <option value={"41-X"}>41-X</option>
             </select>
             <label>понеділок</label>
-            <input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} />
+            <div><input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} /></div>
             <input type="text" placeholder="2 пара" onChange={onChangeMondaySecond} value={mondaySecond} /> <input type="text" placeholder="кабінет" onChange={onChangeMondaySecondCabinet} value={mondaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondaySecondTeacher} value={mondaySecondTeacher} />
             <input type="text" placeholder="3 пара" onChange={onChangeMondayThird} value={mondayThird} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayThirdCabinet} value={mondayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayThirdTeacher} value={mondayThirdTeacher} />
             <input type="text" placeholder="4 пара" onChange={onChangeMondayFourth} value={mondayFourth} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayFourthCabinet} value={mondayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFourthTeacher} value={mondayFourthTeacher} />
