@@ -28,7 +28,7 @@ const AddGroup = () => {
     }
 
     useEffect(() => {
-        if (!newAdmin) {
+        if (!newGroup) {
             tg.MainButton.hide()
         }
         else {
