@@ -482,8 +482,8 @@ const Schedule = () => {
                 <option value={"31-X"}>31-X</option>
                 <option value={"41-X"}>41-X</option>
             </select>
-            <div>понеділок</div>
-            <div><input type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input className='cabinet' type="text" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} /></div>
+            <div className="title">понеділок</div>
+            <div><input className="inputs" type="text" placeholder="1 пара" onChange={onChangeMondayFirst} value={mondayFirst} /> <input className='cabinet' type="text" placeholder="кабінет" onChange={onChangeMondayFirstCabinet} value={mondayFirstCabinet} /> <input className="inputs" type="text" placeholder="викладач" onChange={onChangeMondayFirstTeacher} value={mondayFirstTeacher} /></div>
             <input type="text" placeholder="2 пара" onChange={onChangeMondaySecond} value={mondaySecond} /> <input type="text" placeholder="кабінет" onChange={onChangeMondaySecondCabinet} value={mondaySecondCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondaySecondTeacher} value={mondaySecondTeacher} />
             <input type="text" placeholder="3 пара" onChange={onChangeMondayThird} value={mondayThird} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayThirdCabinet} value={mondayThirdCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayThirdTeacher} value={mondayThirdTeacher} />
             <input type="text" placeholder="4 пара" onChange={onChangeMondayFourth} value={mondayFourth} /> <input type="text" placeholder="кабінет" onChange={onChangeMondayFourthCabinet} value={mondayFourthCabinet} /> <input type="text" placeholder="викладач" onChange={onChangeMondayFourthTeacher} value={mondayFourthTeacher} />
