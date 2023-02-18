@@ -31,8 +31,11 @@
     box-shadow: 2px 2px 15px #8707ff inset;
 }
 .selector{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     width: 300px;
-    background-color: gray;
+    background-color: #8707ff;
+    color: white;
+}
+.span{
+    font-weight: bold;
 }
