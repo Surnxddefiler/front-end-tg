@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import {  Route, Routes } from 'react-router-dom';
 import './App.css';
+import AddGroup from './components/addGroup/addGroup';
 import AdminForm from './components/AdminForm/AdminForm';
 import ChangesForm from './components/ChangesForm/Changes';
 import Schedule from './components/form/form';
@@ -17,6 +18,7 @@ function App() {
         <Route path={'schedule'} element={<Schedule/>}/>
         <Route path={'changes'} element={<ChangesForm/>}/>
         <Route path={'admin'} element={<AdminForm/>}/>
+        <Route path={'newgroup'} element={<AddGroup/>}/>
       </Routes>
     </div>
   );

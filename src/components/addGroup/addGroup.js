@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from "react"
 
-const ChangesForm = () => {
+const AddGroup = () => {
     const tg = window.Telegram.WebApp
-    const [changes, setChanges] = useState('')
+    const [newGroup, setNewGroup] = useState('')
     useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
@@ -17,18 +17,18 @@ const ChangesForm = () => {
     })
 
     const onSendData = useCallback(() => {
-        const Changed = {
-            changes
+        const newGroupCall = {
+            newGroup
         }
-        tg.sendData(JSON.stringify(Changed))
-    }, [tg, changes])
+        tg.sendData(JSON.stringify(newGroupCall))
+    }, [tg, newGroup])
 
-    const onChangeChanges = (e) => {
-        setChanges(e.target.value)
+    const onChangeNewGroup = (e) => {
+        setNewGroup(e.target.value)
     }
 
     useEffect(() => {
-        if (!changes) {
+        if (!newAdmin) {
             tg.MainButton.hide()
         }
         else {
@@ -38,9 +38,9 @@ const ChangesForm = () => {
 
     return (
         <form>
-            <div>заміни</div>
-            <textarea type="text" value={changes} placeholder='url на картинку' onChange={onChangeChanges}></textarea>
+            <div>додати адміна</div>
+            <input type="number" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
         </form>
     )
 }
-export default ChangesForm
+export default AddGroup
