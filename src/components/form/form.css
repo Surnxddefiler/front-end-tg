@@ -33,9 +33,11 @@
 .selector{
     margin: 0 auto;
     width: 300px;
-    background-color: #8707ff;
+    background-color: var(--tg-theme-bg-color);
+    border: #8707ff;
     color: white;
+    outline: 0;
 }
-.span{
+span{
     font-weight: bold;
 }

@@ -455,7 +455,7 @@ const Schedule = () => {
     }
     return (
         <form>
-            <div className="text">якщо потрібно зробити чисельник знаменник, записуйте через /, наприклад: <span>Орг.баз дан.та знань/Над.діагностика 309/309 Саковець О.О./Гак П.В.</span></div>
+            <div className="text">якщо потрібно зробити чисельник знаменник, записуйте через "/" наприклад: <span>Орг.баз дан.та знань/Над.діагностика 309/309 Саковець О.О./Гак П.В.</span></div>
             <select className="selector" value={group} onChange={onChangeGroup} placeholder="группа">
                 <option value={"-"}>-</option>
                 <option value={"11-T"}>11-Т</option>
