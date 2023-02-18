@@ -455,7 +455,7 @@ const Schedule = () => {
     }
     return (
         <form>
-            <select value={group} onChange={onChangeGroup} placeholder="группа">
+            <select className="selector" value={group} onChange={onChangeGroup} placeholder="группа">
                 <option value={"-"}>-</option>
                 <option value={"11-T"}>11-Т</option>
                 <option value={"21-T"}>21-Т</option>
