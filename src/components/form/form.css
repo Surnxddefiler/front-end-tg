@@ -5,5 +5,7 @@
     width: 150px;
 }
 .title{
+    font-size: 2rem;
     text-align: center;
+    border: 0;
 }
