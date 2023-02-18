@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react"
-import './App.css'
 const Schedule = () => {
     const tg = window.Telegram.WebApp
     useEffect(() => {
