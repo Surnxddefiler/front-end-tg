@@ -1,8 +1,18 @@
 .cabinet{
     width: 50px;
+    color: #8707ff;
+ border: 2px solid #8707ff;
+ border-radius: 10px;
+ padding: 10px 25px;
+ background: transparent;
 }
 .inputs{
     width: 150px;
+    color: #8707ff;
+ border: 2px solid #8707ff;
+ border-radius: 10px;
+ padding: 10px 25px;
+ background: transparent;
 }
 .title{
     font-size: 2rem;
@@ -10,7 +20,9 @@
 }
 .cabinet:focus {
     outline: none;
+    box-shadow: 2px 2px 15px #8707ff inset;
 }
 .inputs:focus{
     outline: none;
+    box-shadow: 2px 2px 15px #8707ff inset;
 }
