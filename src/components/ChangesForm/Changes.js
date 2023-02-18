@@ -39,7 +39,7 @@ const ChangesForm = () => {
     return (
         <form>
             <div>заміни</div>
-            <input type="image" value={changes} placeholder='url на картинку' onChange={onChangeChanges}/>
+            <input type="file" value={changes} placeholder='url на картинку' onChange={onChangeChanges}/>
         </form>
     )
 }
