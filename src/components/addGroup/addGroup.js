@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-
+import '../form/form.css'
 const AddGroup = () => {
     const tg = window.Telegram.WebApp
     const [newGroup, setNewGroup] = useState('')
@@ -38,8 +38,8 @@ const AddGroup = () => {
 
     return (
         <form>
-            <div>додати адміна</div>
-            <input type="text" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
+            <div className="title">додати адміна</div>
+            <input className="inputs" type="text" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
         </form>
     )
 }

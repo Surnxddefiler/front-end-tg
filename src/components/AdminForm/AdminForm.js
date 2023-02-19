@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-
+import '../form/form.css'
 const AdminForm = () => {
     const tg = window.Telegram.WebApp
     const [newAdmin, setNewAdmin] = useState('')
@@ -38,8 +38,8 @@ const AdminForm = () => {
 
     return (
         <form>
-            <div>додати адміна</div>
-            <input type="number" value={newAdmin} placeholder='id користуваа' onChange={onChangeNewAdmin}/>
+            <div className="title">додати адміна</div>
+            <input className="inputs" type="number" value={newAdmin} placeholder='id користуваа' onChange={onChangeNewAdmin}/>
         </form>
     )
 }
