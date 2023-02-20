@@ -38,8 +38,8 @@ const AddGroup = () => {
 
     return (
         <form>
-            <div className="title">додати адміна</div>
-            <input className="inputs" type="text" value={newGroup} placeholder='id користуваа' onChange={onChangeNewGroup}/>
+            <div className="title">додати/видалити группу</div>
+            <input className="inputs" type="text" value={newGroup} placeholder='11-K' onChange={onChangeNewGroup}/>
         </form>
     )
 }
