@@ -7,7 +7,7 @@ const Header=()=>{
     return(
         <header className={style.header}>
         <Button onClick={closeApp}>закрыть</Button>
-        <div>bob</div>
+        <div>Nuht</div>
         </header>
     )
 }
